@@ -51,12 +51,12 @@
 		D267CD502C33DFB400495F6B /* DessertsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsTableViewCell.swift; sourceTree = "<group>"; };
 		D267CD532C33E41300495F6B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		D267CD552C33E4DF00495F6B /* DessertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsViewModel.swift; sourceTree = "<group>"; };
-		D267CD572C33E55100495F6B /* DessertsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DessertsModel.swift; path = MealMaster/ViewModel/DessertsModel.swift; sourceTree = SOURCE_ROOT; };
+		D267CD572C33E55100495F6B /* DessertsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DessertsModel.swift; path = MealMaster/Model/DessertsModel.swift; sourceTree = SOURCE_ROOT; };
 		D267CD592C33EE6100495F6B /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
-		D267CD5B2C33F1FF00495F6B /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoriesModel.swift; path = MealMaster/ViewModel/CategoriesModel.swift; sourceTree = SOURCE_ROOT; };
+		D267CD5B2C33F1FF00495F6B /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoriesModel.swift; path = MealMaster/Model/CategoriesModel.swift; sourceTree = SOURCE_ROOT; };
 		D267CD5F2C3475C500495F6B /* MockCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCategoryViewModel.swift; sourceTree = "<group>"; };
 		D26D6D112C3520B500A9B0CF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		D26D6D132C3522D100A9B0CF /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsModel.swift; path = MealMaster/View/Controller/DetailsModel.swift; sourceTree = SOURCE_ROOT; };
+		D26D6D132C3522D100A9B0CF /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsModel.swift; path = MealMaster/Model/DetailsModel.swift; sourceTree = SOURCE_ROOT; };
 		D26D6D162C35527300A9B0CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D2A6EBF82C3394A500A6847B /* MealMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A6EBFB2C3394A500A6847B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +143,16 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		D26D6D182C35564200A9B0CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D267CD572C33E55100495F6B /* DessertsModel.swift */,
+				D267CD5B2C33F1FF00495F6B /* CategoriesModel.swift */,
+				D26D6D132C3522D100A9B0CF /* DetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D2A6EBEF2C3394A500A6847B = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +176,7 @@
 		D2A6EBFA2C3394A500A6847B /* MealMaster */ = {
 			isa = PBXGroup;
 			children = (
-				D2A6EC2B2C33954400A6847B /* Model */,
+				D26D6D182C35564200A9B0CF /* Model */,
 				D21606502C3395E100CF5DA2 /* View */,
 				D267CD4C2C33960A00495F6B /* ViewModel */,
 				D267CD522C33E3F000495F6B /* APIManager */,
@@ -196,16 +206,6 @@
 				D2A6EC1E2C3394A700A6847B /* MealMasterUITestsLaunchTests.swift */,
 			);
 			path = MealMasterUITests;
-			sourceTree = "<group>";
-		};
-		D2A6EC2B2C33954400A6847B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D267CD572C33E55100495F6B /* DessertsModel.swift */,
-				D267CD5B2C33F1FF00495F6B /* CategoriesModel.swift */,
-				D26D6D132C3522D100A9B0CF /* DetailsModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
