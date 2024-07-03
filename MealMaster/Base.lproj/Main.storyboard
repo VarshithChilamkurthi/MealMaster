@@ -168,7 +168,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="794"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" rowHeight="210" id="eUd-Oo-HeQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImageTableViewCell" rowHeight="210" id="eUd-Oo-HeQ" customClass="ImageTableViewCell" customModule="MealMaster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eUd-Oo-HeQ" id="jcR-td-3yH">
@@ -190,8 +190,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="T1c-gZ-rP1" secondAttribute="bottom" id="mhe-g0-D9E"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="thumbnailImageView" destination="T1c-gZ-rP1" id="0gG-0R-3b6"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" rowHeight="65" id="utz-zj-Mtb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TitleTableViewCell" rowHeight="65" id="utz-zj-Mtb" customClass="TitleTableViewCell" customModule="MealMaster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="260" width="393" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="utz-zj-Mtb" id="rzX-qb-f1w">
@@ -215,18 +218,21 @@
                                                 <constraint firstItem="SUb-dQ-jXQ" firstAttribute="trailing" secondItem="rzX-qb-f1w" secondAttribute="trailingMargin" id="y7X-Gu-Ru2"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="SUb-dQ-jXQ" id="ool-dU-5Cy"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell3" rowHeight="55" id="COU-3M-Q8k">
-                                        <rect key="frame" x="0.0" y="325" width="393" height="55"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InstructionsTableViewCell" rowHeight="500" id="COU-3M-Q8k" customClass="InstructionsTableViewCell" customModule="MealMaster" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="325" width="393" height="500"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="COU-3M-Q8k" id="6fn-E1-nwt">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="500"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fdU-FQ-rkC">
                                                     <rect key="frame" x="10" y="0.0" width="373" height="56"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="55" id="LPZ-T0-elj"/>
+                                                        <constraint firstAttribute="height" constant="55" id="vdv-7P-r3Y"/>
                                                     </constraints>
                                                     <segments>
                                                         <segment title="Instructions"/>
@@ -234,37 +240,27 @@
                                                         <segment title="Details"/>
                                                     </segments>
                                                 </segmentedControl>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="fdU-FQ-rkC" secondAttribute="trailing" constant="10" id="Xyv-Dq-KXT"/>
-                                                <constraint firstItem="fdU-FQ-rkC" firstAttribute="top" secondItem="6fn-E1-nwt" secondAttribute="top" id="ghw-lk-V46"/>
-                                                <constraint firstItem="fdU-FQ-rkC" firstAttribute="leading" secondItem="6fn-E1-nwt" secondAttribute="leading" constant="10" id="pm2-q1-BVh"/>
-                                                <constraint firstAttribute="bottom" secondItem="fdU-FQ-rkC" secondAttribute="bottom" id="qgJ-Me-55x"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell4" rowHeight="451" id="w7e-Nb-QxV">
-                                        <rect key="frame" x="0.0" y="380" width="393" height="451"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w7e-Nb-QxV" id="ivX-Hn-TYJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="451"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbA-X6-dHE">
-                                                    <rect key="frame" x="15" y="10" width="368" height="441"/>
-                                                    <mutableString key="text">LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label </mutableString>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg9-dw-Tha">
+                                                    <rect key="frame" x="15" y="70" width="368" height="430"/>
+                                                    <mutableString key="text">LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label Label</mutableString>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="FbA-X6-dHE" firstAttribute="leading" secondItem="ivX-Hn-TYJ" secondAttribute="leading" constant="15" id="2xO-Bc-dmS"/>
-                                                <constraint firstAttribute="bottom" secondItem="FbA-X6-dHE" secondAttribute="bottom" id="WyR-bs-pMq"/>
-                                                <constraint firstItem="FbA-X6-dHE" firstAttribute="top" secondItem="ivX-Hn-TYJ" secondAttribute="top" constant="10" id="gbx-kV-dMR"/>
-                                                <constraint firstAttribute="trailing" secondItem="FbA-X6-dHE" secondAttribute="trailing" constant="10" id="wuj-yw-hRJ"/>
+                                                <constraint firstItem="Eg9-dw-Tha" firstAttribute="leading" secondItem="6fn-E1-nwt" secondAttribute="leading" constant="15" id="1aa-V6-uFN"/>
+                                                <constraint firstItem="Eg9-dw-Tha" firstAttribute="top" secondItem="fdU-FQ-rkC" secondAttribute="bottom" constant="15" id="6cK-5P-8Zh"/>
+                                                <constraint firstAttribute="bottom" secondItem="Eg9-dw-Tha" secondAttribute="bottom" id="Xn2-7k-GbZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="fdU-FQ-rkC" secondAttribute="trailing" constant="10" id="cHL-tv-90Z"/>
+                                                <constraint firstItem="fdU-FQ-rkC" firstAttribute="leading" secondItem="6fn-E1-nwt" secondAttribute="leading" constant="10" id="hCJ-Yu-qKH"/>
+                                                <constraint firstItem="fdU-FQ-rkC" firstAttribute="top" secondItem="6fn-E1-nwt" secondAttribute="top" id="lYm-4o-M09"/>
+                                                <constraint firstAttribute="trailing" secondItem="Eg9-dw-Tha" secondAttribute="trailing" constant="10" id="nEW-Ll-Br0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="instructionsLabel" destination="Eg9-dw-Tha" id="vRq-ZV-zm6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
