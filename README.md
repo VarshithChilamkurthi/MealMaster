@@ -1,4 +1,5 @@
-* Created the recipe app MealMaster using Storyboard and UIKit. Fetched the data asynchronously using async/await. 
+* Created the recipe app MealMaster using Storyboard and UIKit. Fetched the data asynchronously using async/await.
+* Used MVVM design pattern for the project.
 * Added Category scroll view using collectionview at the top.
 * On click of any dessert, user will be redirected to detailed view with instructions, ingredients, measure and more details.
 * Used segmentedcontrol to switch between them.
