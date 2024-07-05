@@ -6,4 +6,4 @@
 * Will change UI or any other implementations upon request.
 * Works with both Light mode ☀️ and Dark mode 🌑
 
-https://github.com/VarshithChilamkurthi/MealMaster/assets/52421766/7d94702d-c4cb-4112-8e51-bcc5dbdfa6c4
+https://github.com/VarshithChilamkurthi/MealMaster/assets/52421766/f4b9599e-5b6d-43e2-887f-4850f592d973
