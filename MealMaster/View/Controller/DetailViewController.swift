@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class DetailViewController: UIViewController {
 
@@ -13,6 +14,7 @@ class DetailViewController: UIViewController {
     
     var mealId = ""
     let detailsViewModelObj = DetailsViewModel()
+    var hud: MBProgressHUD!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,12 +63,15 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension DetailViewController {
     func fetchData() async {
+        self.hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         do {
-            let url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + mealId
+            let url = Constants.mealDetailsUrl.rawValue + mealId
             try await detailsViewModelObj.fetchData(url: url)
+            self.hud.animationType = .fade
             detailsTableView.reloadData()
+            self.hud.hide(animated: true)
         } catch {
-            print("error fetching data")
+            print(ServerErrors.invalidFetch.rawValue)
         }
     }
 }

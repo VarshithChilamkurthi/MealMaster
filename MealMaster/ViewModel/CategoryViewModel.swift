@@ -22,7 +22,7 @@ class CategoryViewModel {
                 let decodedData = try JSONDecoder().decode(CategoriesModel.self, from: data)
                 return decodedData.meals
             } catch {
-                print("not decoded")
+                print(ServerErrors.invalidDecode.rawValue)
                 return nil
             }
     }

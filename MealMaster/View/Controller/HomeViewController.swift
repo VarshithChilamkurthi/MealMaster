@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class HomeViewController: UIViewController {
 
@@ -14,6 +15,7 @@ class HomeViewController: UIViewController {
     
     let dessertsViewModelObj = DessertsViewModel()
     let categoryViewModelObj = CategoryViewModel()
+    var hud: MBProgressHUD!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,13 +71,19 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
 // MARK: - API call
 extension HomeViewController {
     func fetchData() async {
+        self.hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         do {
-            try await categoryViewModelObj.fetchData(url: "https://www.themealdb.com/api/json/v1/1/list.php?c=list")
+            try await categoryViewModelObj.fetchData(url: Constants.categoryListUrl.rawValue)
+            self.hud.animationType = .fade
             categoryCollectionView.reloadData()
-            try await dessertsViewModelObj.fetchData(url: "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert")
+            self.hud.hide(animated: true)
+            
+            try await dessertsViewModelObj.fetchData(url: Constants.dessertsListUrl.rawValue)
+            self.hud.animationType = .fade
             dessertsTableView.reloadData()
+            self.hud.hide(animated: true)
         } catch {
-            print("error fetching data")
+            print(ServerErrors.invalidFetch.rawValue)
         }
     }
 }

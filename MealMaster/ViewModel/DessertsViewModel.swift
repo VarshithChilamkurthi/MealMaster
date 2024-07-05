@@ -21,7 +21,7 @@ class DessertsViewModel {
                 let decodedData = try JSONDecoder().decode(DessertsModel.self, from: data)
                 return decodedData.meals
             } catch {
-                print("not decoded")
+                print(ServerErrors.invalidDecode.rawValue)
                 return nil
             }
     }
