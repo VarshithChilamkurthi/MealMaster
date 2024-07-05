@@ -5,4 +5,3 @@ Used segmentedcontrol to switch between them.
 Will change UI or any other implementations upon request.
 
 https://github.com/VarshithChilamkurthi/MealMaster/assets/52421766/7d94702d-c4cb-4112-8e51-bcc5dbdfa6c4
-
