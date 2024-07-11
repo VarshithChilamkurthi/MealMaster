@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D261D0EB2C3FC4300064051D /* MealMasterSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D0EA2C3FC4300064051D /* MealMasterSwiftUIApp.swift */; };
+		D261D0ED2C3FC4300064051D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D0EC2C3FC4300064051D /* HomeView.swift */; };
+		D261D0EF2C3FC4340064051D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D261D0EE2C3FC4340064051D /* Assets.xcassets */; };
+		D261D0F22C3FC4340064051D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D261D0F12C3FC4340064051D /* Preview Assets.xcassets */; };
+		D261D0FC2C3FC4350064051D /* MealMasterSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D0FB2C3FC4350064051D /* MealMasterSwiftUITests.swift */; };
+		D261D1062C3FC4350064051D /* MealMasterSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D1052C3FC4350064051D /* MealMasterSwiftUIUITests.swift */; };
+		D261D1082C3FC4350064051D /* MealMasterSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D1072C3FC4350064051D /* MealMasterSwiftUIUITestsLaunchTests.swift */; };
+		D261D11A2C40016B0064051D /* DessertsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D1172C40016B0064051D /* DessertsModel.swift */; };
+		D261D11B2C40016B0064051D /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D1182C40016B0064051D /* DetailsModel.swift */; };
+		D261D11C2C40016B0064051D /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D1192C40016B0064051D /* CategoriesModel.swift */; };
+		D261D1202C40017E0064051D /* DessertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D11D2C40017E0064051D /* DessertsViewModel.swift */; };
+		D261D1212C40017E0064051D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D11E2C40017E0064051D /* DetailsViewModel.swift */; };
+		D261D1222C40017E0064051D /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D11F2C40017E0064051D /* CategoryViewModel.swift */; };
+		D261D1252C40019F0064051D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D1232C40019F0064051D /* APIManager.swift */; };
+		D261D1282C4001B20064051D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D261D1262C4001B20064051D /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D261D0F82C3FC4350064051D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D261D0DF2C3FC4300064051D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D261D0E62C3FC4300064051D;
+			remoteInfo = MealMasterSwiftUI;
+		};
+		D261D1022C3FC4350064051D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D261D0DF2C3FC4300064051D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D261D0E62C3FC4300064051D;
+			remoteInfo = MealMasterSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D261D0E72C3FC4300064051D /* MealMasterSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealMasterSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261D0EA2C3FC4300064051D /* MealMasterSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMasterSwiftUIApp.swift; sourceTree = "<group>"; };
+		D261D0EC2C3FC4300064051D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D261D0EE2C3FC4340064051D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D261D0F12C3FC4340064051D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D261D0F72C3FC4350064051D /* MealMasterSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealMasterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261D0FB2C3FC4350064051D /* MealMasterSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMasterSwiftUITests.swift; sourceTree = "<group>"; };
+		D261D1012C3FC4350064051D /* MealMasterSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealMasterSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261D1052C3FC4350064051D /* MealMasterSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMasterSwiftUIUITests.swift; sourceTree = "<group>"; };
+		D261D1072C3FC4350064051D /* MealMasterSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMasterSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D261D1172C40016B0064051D /* DessertsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertsModel.swift; sourceTree = "<group>"; };
+		D261D1182C40016B0064051D /* DetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		D261D1192C40016B0064051D /* CategoriesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		D261D11D2C40017E0064051D /* DessertsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertsViewModel.swift; sourceTree = "<group>"; };
+		D261D11E2C40017E0064051D /* DetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		D261D11F2C40017E0064051D /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		D261D1232C40019F0064051D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D261D1262C4001B20064051D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D261D0E42C3FC4300064051D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261D0F42C3FC4350064051D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261D0FE2C3FC4350064051D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D261D0DE2C3FC4300064051D = {
+			isa = PBXGroup;
+			children = (
+				D261D0E92C3FC4300064051D /* MealMasterSwiftUI */,
+				D261D0FA2C3FC4350064051D /* MealMasterSwiftUITests */,
+				D261D1042C3FC4350064051D /* MealMasterSwiftUIUITests */,
+				D261D0E82C3FC4300064051D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D261D0E82C3FC4300064051D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D261D0E72C3FC4300064051D /* MealMasterSwiftUI.app */,
+				D261D0F72C3FC4350064051D /* MealMasterSwiftUITests.xctest */,
+				D261D1012C3FC4350064051D /* MealMasterSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D261D0E92C3FC4300064051D /* MealMasterSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1142C4000E30064051D /* Model */,
+				D261D1152C4000EA0064051D /* View */,
+				D261D1162C4000F00064051D /* ViewModel */,
+				D261D0EA2C3FC4300064051D /* MealMasterSwiftUIApp.swift */,
+				D261D0EC2C3FC4300064051D /* HomeView.swift */,
+				D261D1242C40019F0064051D /* APIManager */,
+				D261D1272C4001B20064051D /* Common */,
+				D261D0EE2C3FC4340064051D /* Assets.xcassets */,
+				D261D0F02C3FC4340064051D /* Preview Content */,
+			);
+			path = MealMasterSwiftUI;
+			sourceTree = "<group>";
+		};
+		D261D0F02C3FC4340064051D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D261D0F12C3FC4340064051D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D261D0FA2C3FC4350064051D /* MealMasterSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D261D0FB2C3FC4350064051D /* MealMasterSwiftUITests.swift */,
+			);
+			path = MealMasterSwiftUITests;
+			sourceTree = "<group>";
+		};
+		D261D1042C3FC4350064051D /* MealMasterSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1052C3FC4350064051D /* MealMasterSwiftUIUITests.swift */,
+				D261D1072C3FC4350064051D /* MealMasterSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = MealMasterSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		D261D1142C4000E30064051D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1192C40016B0064051D /* CategoriesModel.swift */,
+				D261D1172C40016B0064051D /* DessertsModel.swift */,
+				D261D1182C40016B0064051D /* DetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D261D1152C4000EA0064051D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D261D1162C4000F00064051D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D261D11F2C40017E0064051D /* CategoryViewModel.swift */,
+				D261D11D2C40017E0064051D /* DessertsViewModel.swift */,
+				D261D11E2C40017E0064051D /* DetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D261D1242C40019F0064051D /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1232C40019F0064051D /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		D261D1272C4001B20064051D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1262C4001B20064051D /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D261D0E62C3FC4300064051D /* MealMasterSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D261D10B2C3FC4350064051D /* Build configuration list for PBXNativeTarget "MealMasterSwiftUI" */;
+			buildPhases = (
+				D261D0E32C3FC4300064051D /* Sources */,
+				D261D0E42C3FC4300064051D /* Frameworks */,
+				D261D0E52C3FC4300064051D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MealMasterSwiftUI;
+			productName = MealMasterSwiftUI;
+			productReference = D261D0E72C3FC4300064051D /* MealMasterSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D261D0F62C3FC4350064051D /* MealMasterSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D261D10E2C3FC4350064051D /* Build configuration list for PBXNativeTarget "MealMasterSwiftUITests" */;
+			buildPhases = (
+				D261D0F32C3FC4350064051D /* Sources */,
+				D261D0F42C3FC4350064051D /* Frameworks */,
+				D261D0F52C3FC4350064051D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D261D0F92C3FC4350064051D /* PBXTargetDependency */,
+			);
+			name = MealMasterSwiftUITests;
+			productName = MealMasterSwiftUITests;
+			productReference = D261D0F72C3FC4350064051D /* MealMasterSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D261D1002C3FC4350064051D /* MealMasterSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D261D1112C3FC4350064051D /* Build configuration list for PBXNativeTarget "MealMasterSwiftUIUITests" */;
+			buildPhases = (
+				D261D0FD2C3FC4350064051D /* Sources */,
+				D261D0FE2C3FC4350064051D /* Frameworks */,
+				D261D0FF2C3FC4350064051D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D261D1032C3FC4350064051D /* PBXTargetDependency */,
+			);
+			name = MealMasterSwiftUIUITests;
+			productName = MealMasterSwiftUIUITests;
+			productReference = D261D1012C3FC4350064051D /* MealMasterSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D261D0DF2C3FC4300064051D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D261D0E62C3FC4300064051D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D261D0F62C3FC4350064051D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D261D0E62C3FC4300064051D;
+					};
+					D261D1002C3FC4350064051D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D261D0E62C3FC4300064051D;
+					};
+				};
+			};
+			buildConfigurationList = D261D0E22C3FC4300064051D /* Build configuration list for PBXProject "MealMasterSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D261D0DE2C3FC4300064051D;
+			productRefGroup = D261D0E82C3FC4300064051D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D261D0E62C3FC4300064051D /* MealMasterSwiftUI */,
+				D261D0F62C3FC4350064051D /* MealMasterSwiftUITests */,
+				D261D1002C3FC4350064051D /* MealMasterSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D261D0E52C3FC4300064051D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D261D0F22C3FC4340064051D /* Preview Assets.xcassets in Resources */,
+				D261D0EF2C3FC4340064051D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261D0F52C3FC4350064051D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261D0FF2C3FC4350064051D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D261D0E32C3FC4300064051D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D261D11C2C40016B0064051D /* CategoriesModel.swift in Sources */,
+				D261D11B2C40016B0064051D /* DetailsModel.swift in Sources */,
+				D261D0ED2C3FC4300064051D /* HomeView.swift in Sources */,
+				D261D1252C40019F0064051D /* APIManager.swift in Sources */,
+				D261D1202C40017E0064051D /* DessertsViewModel.swift in Sources */,
+				D261D1282C4001B20064051D /* Constants.swift in Sources */,
+				D261D1222C40017E0064051D /* CategoryViewModel.swift in Sources */,
+				D261D1212C40017E0064051D /* DetailsViewModel.swift in Sources */,
+				D261D11A2C40016B0064051D /* DessertsModel.swift in Sources */,
+				D261D0EB2C3FC4300064051D /* MealMasterSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261D0F32C3FC4350064051D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D261D0FC2C3FC4350064051D /* MealMasterSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261D0FD2C3FC4350064051D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D261D1062C3FC4350064051D /* MealMasterSwiftUIUITests.swift in Sources */,
+				D261D1082C3FC4350064051D /* MealMasterSwiftUIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D261D0F92C3FC4350064051D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D261D0E62C3FC4300064051D /* MealMasterSwiftUI */;
+			targetProxy = D261D0F82C3FC4350064051D /* PBXContainerItemProxy */;
+		};
+		D261D1032C3FC4350064051D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D261D0E62C3FC4300064051D /* MealMasterSwiftUI */;
+			targetProxy = D261D1022C3FC4350064051D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D261D1092C3FC4350064051D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D261D10A2C3FC4350064051D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D261D10C2C3FC4350064051D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MealMasterSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varshith.development.test.MealMasterSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D261D10D2C3FC4350064051D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MealMasterSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varshith.development.test.MealMasterSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D261D10F2C3FC4350064051D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varshith.development.test.MealMasterSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealMasterSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MealMasterSwiftUI";
+			};
+			name = Debug;
+		};
+		D261D1102C3FC4350064051D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varshith.development.test.MealMasterSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealMasterSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MealMasterSwiftUI";
+			};
+			name = Release;
+		};
+		D261D1122C3FC4350064051D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varshith.development.test.MealMasterSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MealMasterSwiftUI;
+			};
+			name = Debug;
+		};
+		D261D1132C3FC4350064051D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varshith.development.test.MealMasterSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MealMasterSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D261D0E22C3FC4300064051D /* Build configuration list for PBXProject "MealMasterSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D261D1092C3FC4350064051D /* Debug */,
+				D261D10A2C3FC4350064051D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D261D10B2C3FC4350064051D /* Build configuration list for PBXNativeTarget "MealMasterSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D261D10C2C3FC4350064051D /* Debug */,
+				D261D10D2C3FC4350064051D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D261D10E2C3FC4350064051D /* Build configuration list for PBXNativeTarget "MealMasterSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D261D10F2C3FC4350064051D /* Debug */,
+				D261D1102C3FC4350064051D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D261D1112C3FC4350064051D /* Build configuration list for PBXNativeTarget "MealMasterSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D261D1122C3FC4350064051D /* Debug */,
+				D261D1132C3FC4350064051D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D261D0DF2C3FC4300064051D /* Project object */;
+}
